@@ -28,6 +28,7 @@
 #     if message != "quit":
 #         print(message)
 
+#USING FLAGS active unactive (true/false)
 promt = "\nTell me something...: "
 promt += "\n Enter 'quit' to end the program. "
 active = True
@@ -38,3 +39,4 @@ while active :
         active = False
     else:
         print(message)
+
