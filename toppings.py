@@ -1,6 +1,3 @@
-import re
-
-
 requested_toppings = ['mushrooms','extra cheese']
 
 if 'mushrooms' in requested_toppings:

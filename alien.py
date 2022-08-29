@@ -36,3 +36,27 @@ print(f"New position: {alien_0['x_position']}")
 alien_3 = {'color':'red','speed':'slow'} #'points':5 - Use get() when there is no value assigned
 point_value = alien_3.get('points','No point value assigned.')
 print (point_value)
+
+aliens=[]
+
+#Make a list of 30 aliesn
+for alien_number in range (30):
+    new_alien = {'color':'green','points':5,'speed':'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[:3]:
+    if alien['color']=='green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points']='10'
+    elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points']='15'
+
+#show the first 5 aliens.
+for alien in aliens[:5]:
+    print(alien)
+print("....")
+#show how many aliesn have been created.
+print(f"Total number of aliens: {len(aliens)}")
